@@ -1,7 +1,12 @@
-void main() {
-    IO.println(String.format("Hello and welcome!"));
+import com.projeto_java.*;
+import com.projeto_java.employee.Funcionario;
+import com.projeto_java.roles.Gerente;
 
-    for (int i = 1; i <= 5; i++) {
-           IO.println("i = " + i);
-    }
+void main() {
+    Funcionario lucas = new Gerente("lucas", "541479989" );
+
+    IO.println(lucas.getDados());
+
+    IO.println("oi");
+
 }
